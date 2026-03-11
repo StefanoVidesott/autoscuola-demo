@@ -1,0 +1,128 @@
+/* --- VARIABILI CSS (Per cambiare i colori di tutto il sito in un secondo) --- */
+:root {
+    --colore-primario: #2c5e3b;
+    /* Verde Quercia */
+    --colore-accento: #e6b325;
+    /* Giallo scuolabus/attenzione */
+    --testo-scuro: #333333;
+    --sfondo-chiaro: #f8f9fa;
+}
+
+/* --- RESET E BASE --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--testo-scuro);
+    background-color: var(--sfondo-chiaro);
+    line-height: 1.6;
+}
+
+/* --- HEADER (Intestazione) --- */
+header {
+    background-color: white;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--colore-primario);
+}
+
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--testo-scuro);
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: var(--colore-primario);
+}
+
+/* --- HERO SECTION (La parte principale in alto) --- */
+.hero {
+    background-color: var(--colore-primario);
+    color: white;
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    background-color: var(--colore-accento);
+    color: var(--testo-scuro);
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.2s;
+    display: inline-block;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+/* --- SERVIZI (Griglia) --- */
+.servizi {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.servizi h2 {
+    font-size: 2.2rem;
+    color: var(--colore-primario);
+    margin-bottom: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    border-top: 4px solid var(--colore-primario);
+}
+
+.card h3 {
+    color: var(--colore-primario);
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: var(--testo-scuro);
+    color: white;
+    text-align: center;
+    padding: 30px 5%;
+    margin-top: 40px;
+}
